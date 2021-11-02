@@ -25,7 +25,7 @@ sudo ./aws/install
 sudo rm awscliv2.zip 
 
 # Do not forget to change s3 bucket name as it is unique
-sudo aws s3 sync s3://jenkins-daily-backup-files /var/lib/docker/volumes/jenkins_jenkins-data/_data/
+sudo aws s3 sync s3://jenkins-daily-backup-files2 /var/lib/docker/volumes/jenkins_jenkins-data/_data/
 
 #start jenkins container after restore
 sudo docker start jenkins

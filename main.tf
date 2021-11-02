@@ -49,7 +49,7 @@ resource "aws_instance" "jenkins" {
   instance_type   = "t2.xlarge"
   iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
   security_groups = [aws_security_group.jenkins.name]
-  key_name        = "jenkinskey"
+  key_name        = "faskey2"
   user_data = "${file("user-data-jenkins.sh")}"
 
   connection {
